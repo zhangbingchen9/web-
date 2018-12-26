@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.hang0 li{
+			float: right;
+			color: gray;
+			height: 20px;
+			font-size: 14px;
+			margin-left: 15px; 
+		}
+		#left0{ 
+			float: left;
+		}
+		li{
+			list-style: none;
+		}
+		.first0{
+			width: 100%;
+			text-align: center;
+		}
+		.first1{
+			margin: 0 auto;
+			width: 1180px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.backimg0{
+			background: url('img/common_min.png');
+			width: 20px;
+			height: 20px;
+			background-repeat : no-repeat;
+		}
+		.backimg1{
+			background-position:0 -74px;
+		}
+		.backimg2{
+			background-position:0 -51px;
+		}
+		.backimg3{
+			background-position:0 -30px;
+		}
+		.car span{
+			color: orange;
+		}
+		.car{
+			list-style-image:url('img/gouwuche.jpg');
+			list-style-position: inside;
+		}
+		.phone{
+			list-style-image:url('img/tp-my-phone.png');
+			list-style-position: inside;
+		}
+		.dingdan{
+			list-style-image:url('img/dingdan.jpg');
+			list-style-position: inside;
+		}
+		.xiaoxi{
+			list-style-image:url('img/xiaoxi.png');
+			list-style-position: inside;
+		}
+		.jianju{
+			margin-bottom: 25px;
+		}
+		.first2{
+			width: 1180px;
+			height: 90px;
+			margin: 0 auto;
+		}
+		.first2 li{
+			float: left;
+		}
+		#search{
+			size: 200px;
+			width: 400px;
+			height: 40px;
+			color: gray;
+			border: 2px solid #fe6c00;
+		}
+		#search1{
+			width: 65px;
+			font-size: 14px;
+			height: 44px;
+			border: none;
+			background-color: #fe6c00;
+			color: white;	
+		}
+		.sousuo{
+			margin-top: 15px;
+			margin-left: 200px;
+			width: 500px;
+		}
+		#tupian{
+			margin-top: 15px;
+			float: right;
+		}
+		.xiaozi{
+			margin-top: 10px;
+			margin-left: 220px;
+			color: gray;
+			font-size: 12px;
+		}
+		.xiaozi li{
+			padding-left: 3px;
+			padding-right: 3px;
+			border-right: 1px solid #ebe7e7;
+		}
+		.color{
+			color: orange;
+		}
+		#last{
+			border-right: 0;
+		}
+		.first3{
+			height: 40px;
+			width: 1180px;
+			margin: 0 auto;
+		}
+		.first3 li{
+			margin-top: 10px;
+			width: 130px;
+			float: left;
+		}
+		#firstcolor{
+			margin-top: 0px;
+			height: 30px;
+			padding: 10px 20px 0px 20px;
+			color: white;
+			background-color: #fe6c00;
+		}
+		.first6{
+			margin: 0 auto;
+			text-align: center;
+			color: gray;
+			width: 1180px;
+
+		}
+		.word1{
+			font-size: 12px;
+		}
+		.first4{
+			width: 100%;
+			background-color:#000000;
+			color: white;
+		}
+		.first4 ul{
+			width: 1180px;
+			height: 40px;
+			margin: 0 auto;
+		}
+		.first4 li{
+			margin-top: 10px;
+			float: left;
+			margin-left: 60px;
+			text-align: center;
+		}
+		.first7{
+			width: 100%;
+		}
+		.first7 ul{
+			width: 1180px;
+			margin: 0 auto;
+		}
+		.daohang ul{
+			width: 1180px;
+			margin: 0 auto;
+		}
+		.first8{
+			width: 1180px;
+			margin: 0 auto;
+		}
+		.first8 ul{
+			float: left;
+		}
+		/*.border{
+			border: 1px solid red;
+		}*/
+		.e1{
+			width: 995px;
+			height: 630px;
+		}
+		.e2{
+			width: 180px;
+			height: 630px;
+		}
+		.e11{
+			width: 420px;
+			height: 630px;
+		}
+		.e12{
+			width: 570px;
+			height: 630px;
+		}
+		.e12 li{
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		.ppp{
+			padding: 6px 6px;
+			border: 1px solid gray;
+		}
+		.xuanze{
+			width: 420px;
+		}
+		#spanr{
+			float: right;
+		}
+		.huaxian{
+			text-decoration: line-through;
+		}
+		.color1{
+			color: gray;
+			margin-bottom:20px;
+		}
+		.jiage{
+			margin-left: 40px;
+			color: #fe6c00;
+			margin-right: 10px;
+		}
+		.rongliang{
+			border:none;
+			margin-left: 20px;
+			padding: 5px 8px 5px 5px;
+			background-position:35px 14px;
+			background-repeat: no-repeat;
+			background-color: white;
+		}
+		.num{
+			width: 50px;
+			height: 26px;
+		}
+		.jisuan{
+			margin-right: 50px;
+		}
+		.e121 button{
+			width: 30px;
+			height: 30px;
+			background-color: white;
+			border:1px solid gray;
+		}
+		.last1{
+			margin-right: 10px;
+		}
+		.last2 button{
+			width: 100px;
+			height: 40px;
+		}
+		.buy{
+			background-color: white;
+			border:2px solid #ff0754;
+			margin-right: 30px;
+			border-radius: 10px;
+		}
+		.car1{
+			background-color: #ff0754;
+			border: 0;
+			border-radius: 10px;
+		}
+		#box{
+			width:400px;
+			height:400px;
+			position:relative;
+			margin:20px auto;
+		}
+		#img1{
+			width:400px;
+			height:400px;
+			position:relative;
+			left:0;
+			top:0;
+		}
+		#slider{
+			width:150px;
+			height:150px;
+			position:absolute;
+			left:0;top:0;
+			background:#CCC;
+			opacity:0.4;
+			cursor: move;display:none;
+			filter:alpha(opacity=40);
+		}
+		#img2{
+			position:absolute;
+			right:0;top:0;
+			display:none; 
+			width:400px;
+			height:400px;
+			overflow:hidden;
+		}
+		#Bimg{
+			position:absolute;
+			left:0;
+			top:0;
+		}
+		.sp0{
+			border:2px solid #fe6c00;
+		}
+		#cover{
+			text-align: center;
+			margin: 0 auto;
+			background-color: white;
+			z-index:50;
+		}
+
+		#bg{ 
+			display: none; 
+			position: absolute; 
+			top: 0%; 
+			left: 0%; 
+			width: 100%; 
+			height: 100%; 
+			background-color: black; 
+			z-index:1001; 
+			-moz-opacity: 0.3; 
+			opacity:.30; 
+			filter: alpha(opacity=30);
+		}
+ 
+		#show{ 
+			width: 400px;
+			height: 200px;
+			border: 2px solid #aca9d3;
+			display: none; 
+			position: absolute; 
+			top: 25%; 
+			left: 32%;
+			background-color: white; 
+			z-index:1002; 
+			overflow: auto;
+		}
+		button{
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="first0" id="cover">
+		<div class="first1 jianju">
+			<ul class="hang0">
+				<li id="left0">帮5买，享帮帮</li>
+				<li class="car">购物车<span>0</span></li>
+				<li>客户服务</li>
+				<li>帮5淘</li>
+				<li class="phone">手机版</li>
+				<li>帮站兑换</li>
+				<li>我的收藏</li>
+				<li class="dingdan">我的订单</li>
+				<li class="xiaoxi">消息</li>
+				<li>注册</li>
+				<li>登录</li>
+				<li class="backimg0 backimg1"></li>
+				<li class="backimg0 backimg2"></li>
+				<li class="backimg0 backimg3"></li>
+			</ul>
+		</div>
+		<ul class="first2">
+			<li>
+				<img src="img/logo_03.jpg">
+			</li>
+			<li class="sousuo">
+				<input type="text" value="输入商品网址或关键词，直通全网，款苏帮5购" id="search"><button id="search1">搜全网</button>
+			</li>
+			<li id="tupian">
+				<img src="img/tupian_03.png">
+			</li>
+			<li>
+				<ul class="xiaozi">
+					<li class="color">洗发护发</li>
+					<li class="color">日本纸尿裤</li>
+					<li>身体乳</li>
+					<li>内衣文胸</li>
+					<li>iPhone 6s</li>
+					<li>iPad Air2</li>
+					<li>牛仔裤</li>
+					<li>奶粉</li>
+					<li>防晒霜</li>
+					<li id="last">伞</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="first4">
+		<ul>
+			<li>首页</li>
+			<li>热门品牌</li>
+			<li>美妆个户</li>
+			<li>服饰鞋包</li>
+			<li>母婴生活</li>
+			<li>食品保健</li>
+			<li>韩国直邮</li>
+			<li>跨境购</li>
+			<li style="margin-top: 0px;">
+				<img src="img/ff_03.jpg">
+			</li>
+		</ul>
+	</div>
+	<div class="daohang">
+		<ul>
+			<li>首页>美容护肤/美体/精油>防晒>韩国 RE:CIPE水晶清爽防水防晒配伍SPF50 150ml/瓶</li>
+		</ul>
+	</div>
+	
+	<div class="first8">
+		<ul class="e1 border">
+			<ul class="e11 border">
+				<li id="box">
+					<div class="ppp img1" id="img1">
+						<img src="img/pp0.jpeg" width="400px" height="400px" id="img11">
+						<div id="slider"></div>
+					</div>
+					<div style="display: none" id="img2">
+						<img src="img/pp0.jpeg" width="1148.2px" height="1148.2px" id="Bimg">
+					</div>
+				</li>
+				<li>
+					<div class="xuanze">
+						<img src="img/spanl.jpg" onclick="fLeft();">
+						<img src="img/sp0.jpeg"  class="sp0" id="sp0" onclick="fLeft();">
+						<img src="img/sp1.jpeg" class="sp1" id="sp1" onclick="fRight();">
+						<img src="img/spanr.jpg" id="spanr" onclick="fRight();">
+					</div>
+				</li>
+			</ul>
+			<ul class="e12 border">
+				<li>韩国 RE:CIPE水晶清爽防水防晒配伍SPF50 150ml/瓶</li>
+				<li class="color1">【限购3件】超透明无痕防晒，防水防汗定妆，保温降温不粘腻。水晶防晒喷雾，喷后皮肤水润，不油，不留白，更不会像防晒霜那样抹不开，非常使用，开始存货吧</li>
+				<li>价格 <span class="jiage">￥71</span> <span class="huaxian">￥150</span></li>
+				<li>
+					<img src="img/ss_09.jpg">
+				</li>
+				<li>
+					<span>化妆品净含量</span><button class="rongliang rongliang1" id='rongliang1' onclick="biankuang1();">150ml</button><button class="rongliang rongliang2" id='rongliang2' onclick="biankuang2();">200ml</button>
+				</li>
+				<li class="e121">
+					<span class="jisuan">数量</span><button onclick="cut()">-</button><input type="text" class="num" id="num1" value="1"><button class="last1" onclick="add()">+</button>件（库存<span id="all">5</span>件）
+				</li>
+				<li>
+					<img src="img/oo_03.jpg">
+				</li>
+				<li>您已选择<span id="xuanze">"150ml"</span></li>
+				<li class="last2">
+					<button class="buy">立即购买</button>
+					<button class="car1" onclick="showDiv()">加入购物车</button>
+				</li>
+			</ul>
+		</ul>
+		<ul class="e2 border">
+			<li>
+				<img src="img/ww_07.jpg">
+			</li>
+		</ul>
+	</div>
+	<div class="first7">
+		<ul>
+			<li>
+				<img src="img/a_07.jpg">
+			</li>
+		</ul>
+	</div>
+	<div class="first6 border">
+		<ul>
+			<li>关于帮5买 | 联系我们 | 合作商家 | 友情链接 | 加入我们 | 移动应用 | 热门 | 广告联盟 | 使用条款</li>
+			<li class="word1">Copyright©2011-2015 B5M.COM.All rights reserved .Powered by B5 Msoft Co.Ltd</li>
+			<li class="word1">增值电信乐舞经营许可证：沪B2-10130065号|中华人民共和国互联网药品信息五福资格证书（沪）-非经营性-2013-0034沪卫（中医）网审【2015】10032号 沪ICP备11034776号-3|食品流通许可证：SP3101151410301755</li>
+			<li>
+				<img src="img/bo1.gif">
+				<img src="img/bo2.png">
+				<img src="img/bo3.gif">
+				<img src="img/bo4.png">
+				<img src="img/bo5.png">
+				<img src="img/bo6.png">
+				<img src="img/bo7.png">
+			</li>
+		</ul>
+	</div>
+	<div class="container_div"><!-- 遮罩 -->
+    <div id="bg" onclick="hideDiv()" ></div>
+    <div id="show">
+        <ul class="maiwan">
+        	<li style="float: right;" onclick="hideDiv();">X</li>
+        	<li><img src="img/rr11_02.jpg"></li>
+        	<li><button style="margin-left:80px;margin-right: 20px;border: 1px solid #ff0754;background-color: white;color:#ff0754;width: 100px;height: 40px;"onclick="hideDiv();" >继续购物</button>
+        		<button style="background-color: #ff0754;color:white;border: none;width: 100px;height: 40px;">去购物车结算</button></li>
+        </ul>
+    </div>
+	<script type="text/javascript">
+		var img1 = document.getElementById("img1");
+		var img2 = document.getElementById("img2");
+		var slider = document.getElementById("slider");
+		var Bimg = document.getElementById("Bimg");
+		var box = document.getElementById('box'); 
+		var sp0 =document.getElementById('sp0'); 
+		var sp1 =document.getElementById('sp1'); 
+		var xuanze=document.getElementById('xuanze')
+		var all=document.getElementById('all')
+
+		function add(){
+			num1.value<parseInt(all.innerText) ? num1.value++ : 5
+			
+		}
+		function cut(){
+			num1.value>1 ? num1.value-- : 1
+		}
+
+
+		var rongliang1=document.getElementById('rongliang1')
+		var rongliang2=document.getElementById('rongliang2')
+		function biankuang1(){
+			rongliang1.style.backgroundImage="url('img/duigou.png')"
+			rongliang1.style.border= "2px solid #ff0754"
+			rongliang2.style.border= "none"
+			rongliang2.style.backgroundImage="none"
+			xuanze.innerHTML='"150ml"'
+		}
+		function biankuang2(){
+			rongliang2.style.backgroundImage="url('img/duigou.png')"
+			rongliang2.style.border= "2px solid #ff0754"
+			rongliang1.style.border= "none"
+			rongliang1.style.backgroundImage="none"
+			xuanze.innerHTML='"200ml"'
+		}
+
+
+
+		var cover=document.getElementById('cover')
+		function showDiv() { 
+			document.getElementById('bg').style.display ="block";
+			document.getElementById("show").style.display ="block";
+		}
+		 
+		function hideDiv(){
+			document.getElementById("bg").style.display ="none";
+			document.getElementById("show").style.display ="none";	
+		}
+
+
+		window.onscroll=function(){
+			var st =document.documentElement.scrollTop || document.body.scrollTop;
+			if (st>136) {
+				cover.style.position='fixed'
+			}else{
+				cover.style.position='static'
+			}
+		}
+
+
+		img1.onmouseover=function(){
+		    slider.style.display='block';
+			img2.style.display='block';
+			box.style.width='800px'
+			box.style.marginLeft='10px'
+	 	}
+		img1.onmouseout=function(){
+		    slider.style.display='none';
+			img2.style.display='none';
+			box.style.width='400px'
+	 	}
+	  
+	    img1.onmousemove=function(ev){
+			var ev=ev||event;
+			  
+			var oL=ev.clientX-box.offsetLeft-slider.offsetWidth/2;
+			var oT=ev.clientY-box.offsetTop-slider.offsetHeight/2;
+			  
+			var oMaxw=img1.offsetWidth-slider.offsetWidth;
+			var oMaxh=img1.offsetHeight-slider.offsetHeight;
+			  
+			oL=oL>oMaxw?oMaxw:oL<0?0:oL;
+			oT=oT>oMaxh?oMaxh:oT<0?0:oT;
+			
+			slider.style.left = oL+'px';
+			slider.style.top = oT+'px' ;
+			
+			var oBmaxw = img2.offsetWidth - Bimg.offsetWidth; 
+			var oBmaxh = img2.offsetHeight - Bimg.offsetHeight; 
+			Bimg.style.left = ( oL/oMaxw ) * oBmaxw + 'px'
+			Bimg.style.top = ( oT/oMaxh ) * oBmaxh + 'px'
+		}
+		function fLeft(){
+			sp0.style.border="2px solid #fe6c00"
+			sp1.style.border="none"
+			img11.setAttribute('src','img/pp0.jpeg')
+			Bimg.setAttribute('src','img/pp0.jpeg')
+		}
+		function fRight(){
+			sp0.style.border="none"
+			sp1.style.border="2px solid #fe6c00"
+			img11.setAttribute('src','img/pp1.jpeg')
+			Bimg.setAttribute('src','img/pp1.jpeg')
+		}
+	</script>
+</body>
+</html>
